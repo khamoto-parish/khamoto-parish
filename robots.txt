@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://khamoto-parish.github.io/khamoto-parish/sitemap.xml
