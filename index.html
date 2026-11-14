@@ -15,8 +15,7 @@ header h1{font-size:76px;line-height:.92;letter-spacing:1px;text-shadow:0 6px 22
 header h2{font-size:20px;margin-top:10px;color:#ffe27a;letter-spacing:3px}
 header .top-badge{display:inline-block;background:#ffd95e;color:#0a3d16;font-weight:800;font-size:12px;letter-spacing:1.5px;padding:7px 16px;border-radius:30px;margin-top:14px}
 .btn{display:inline-block;padding:13px 24px;border-radius:30px;text-decoration:none;font-weight:800;border:none;cursor:pointer;font-size:15px}
-.btn-map{background:#4285F4;color:white}.btn-gold{background:#e8a91c;color:#0f4d1e}.btn-green{background:#25D366;color:white}.btn-blue{background:#0f4d1e;color:white}.btn-red{background:#FF0000;color:white}
-/* MENU - NOT STICKY, COLLAPSIBLE, DOES NOT COVER */
+.btn-map{background:#4285F4;color:white}.btn-gold{background:#e8a91c;color:#0f4d1e}.btn-green{background:#25D366;color:white}.btn-blue{background:#0f4d1e;color:white}.btn-red{background:#FF0000;color:white}.btn-call{background:#ff6b00;color:white}.btn-call2{background:#6a1b9a;color:white}
 .menu{background:#0f4d1e;margin:0;position:static}
 .menu summary{background:#0a3d16;color:#ffd95e;padding:14px 18px;font-weight:800;font-size:14px;letter-spacing:1px;text-align:center;cursor:pointer;list-style:none}
 .menu summary::-webkit-details-marker{display:none}
@@ -47,13 +46,16 @@ img{width:100%;border-radius:16px;margin-top:12px;display:block}
 .video-label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.85));color:white;padding:28px 12px 10px;font-size:14px;font-weight:700}
 input,textarea{width:100%;padding:14px;border:1.5px solid #ddd;border-radius:12px;margin-top:10px;font-size:15px;font-family:inherit;background:#fffdf5}input:focus,textarea:focus{border-color:#1a7a33;outline:none}
 .enquiry-btns{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.enquiry-btns .btn{width:100%;margin-top:0;text-align:center}
+.call-btns{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.call-btns .btn{width:100%;text-align:center}
 .whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;text-decoration:none;z-index:100;box-shadow:0 6px 16px rgba(0,0,0,.35)}
+.call-float{position:fixed;bottom:20px;left:20px;background:#ff6b00;color:white;width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;z-index:100;box-shadow:0 6px 16px rgba(0,0,0,.35)}
 .pill-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.pill{background:#e6f4e9;color:#0f4d1e;padding:7px 13px;border-radius:30px;font-size:13px;font-weight:700}
-@media(max-width:600px){header h1{font-size:48px}header{padding:0 14px 28px}.photo-grid,.village-grid{grid-template-columns:1fr}.enquiry-btns{grid-template-columns:1fr}.card{padding:22px 18px}}
+@media(max-width:600px){header h1{font-size:48px}header{padding:0 14px 28px}.photo-grid,.village-grid{grid-template-columns:1fr}.enquiry-btns,.call-btns{grid-template-columns:1fr}.card{padding:22px 18px}}
 </style>
 </head>
 <body>
 <a class="whatsapp-float" href="https://wa.me/256788401754?text=Hello%20Khamoto%20Parish" target="_blank">💬</a>
+<a class="call-float" href="tel:+256788401754">📞</a>
 <header>
 <h1>KHAMOTO<br>PARISH</h1>
 <h2>FARMERS • FAITH • RESILIENCE • GROWTH</h2>
@@ -244,8 +246,13 @@ input,textarea{width:100%;padding:14px;border:1.5px solid #ddd;border-radius:12p
 
 <div class="card" id="contact">
 <span class="section-num">TALK TO US</span>
-<h2>📞 Contact & Enquire</h2>
-<p>Want to visit? Want to know about plots, church, school, farming? Fill this form and choose how to send it - <b>WhatsApp</b> or <b>Email</b>.</p>
+<h2>📞 Contact & Enquire - Gonasa Brian</h2>
+<p>Want to visit? Want to know about plots, church, school, farming? Call Gonasa Brian directly, or fill this form and choose how to send it - <b>WhatsApp</b> or <b>Email</b>.</p>
+<h3>📞 Call Now</h3>
+<div class="call-btns">
+<a class="btn btn-call" href="tel:+256788401754">📞 Call +256 788 401 754</a>
+<a class="btn btn-call2" href="tel:+256700401754">📞 Call +256 700 401 754</a>
+</div>
 <h3>Send Enquiry Now</h3>
 <form id="enquiryForm" onsubmit="return false;">
 <input id="name" type="text" placeholder="Your Name" required>
@@ -257,16 +264,20 @@ input,textarea{width:100%;padding:14px;border:1.5px solid #ddd;border-radius:12p
 <button class="btn btn-blue" type="button" onclick="sendEnquiry('email')">📧 Send via Email →</button>
 </div>
 </form>
-<p style="font-size:13px;color:#888;margin-top:10px;text-align:center;">WhatsApp: +256 788 401 754 &nbsp;•&nbsp; Email: gonasabrian1@gmail.com</p>
+<p style="font-size:13px;color:#888;margin-top:10px;text-align:center;">Call: +256 788 401 754 &nbsp;•&nbsp; +256 700 401 754<br>WhatsApp: +256 788 401 754 &nbsp;•&nbsp; Email: gonasabrian1@gmail.com</p>
 </div>
 
 <div class="author-box">
-<img class="author-photo" src="https://i.ibb.co/bg8nCNSt/IMG-20260912-WA0004.jpg" alt="Brian Gonasa">
+<img class="author-photo" src="https://i.ibb.co/bg8nCNSt/IMG-20260912-WA0004.jpg" alt="Gonasa Brian">
 <h2>✍️ About The Author</h2>
-<p style="font-size:22px;font-weight:800;">Brian Gonasa</p>
-<p>Written & Researched by Brian Gonasa<br>Son of Khamoto Parish • Bungokho Central, Mbale</p>
+<p style="font-size:22px;font-weight:800;">Gonasa Brian</p>
+<p>Written & Researched by Gonasa Brian<br>Son of Khamoto Parish • Bungokho Central, Mbale</p>
 <p style="margin-top:8px;font-size:14px;">This story was written to preserve the true history of Khamoto Parish - for our children, and for generations to come.</p>
-<a class="btn btn-green" href="https://wa.me/256788401754" target="_blank">Contact The Author</a>
+<div class="call-btns" style="max-width:520px;margin:14px auto 0;">
+<a class="btn btn-call" href="tel:+256788401754">📞 Call Gonasa Brian</a>
+<a class="btn btn-green" href="https://wa.me/256788401754" target="_blank">💬 WhatsApp Gonasa Brian</a>
+</div>
+<p style="font-size:13px;margin-top:12px;">Second Line: <a href="tel:+256700401754" style="color:#ffd95e;font-weight:800;">+256 700 401 754</a></p>
 <p style="font-size:13px;opacity:.85;margin-top:18px;border-top:1px solid rgba(255,255,255,.25);padding-top:12px;">© 2026 Khamoto Parish • No Rights Reserved • Free To Share</p>
 </div>
 
